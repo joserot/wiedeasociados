@@ -99,4 +99,31 @@ $primary: #c6996b;
 	}
 }
 
+/*Navbar*/
+
+.navbar-style {
+	display: flex;
+	flex-direction: row;
+}
+
+.container-navbar-rrss {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+	.navbar-style {
+		display: flex;
+		flex-direction: row;
+	}
+	.container-navbar-rrss {
+		position: absolute;
+		right: 0;
+		transform: translate(-1rem, 0);
+	}
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
