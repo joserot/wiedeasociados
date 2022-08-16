@@ -16,7 +16,7 @@ const ContactForm = () => {
 						className="form-control"
 						rows={4}
 						defaultValue={""}
-						placeholder="Mensaje"
+						placeholder="Dejanos tu consulta "
 					/>
 				</div>
 				<button type="submit" className="btn btn-primary btn-block mb-4">

@@ -6,6 +6,7 @@ import InmueblesDestacados from "../components/InmueblesDestacados";
 import API_INMUEBLES from "../helpers/api";
 import Loader from "../components/Loader";
 import { useState, useEffect } from "react";
+import Tasaciones from "../components/Tasaciones";
 
 const Index = (props) => {
 	const [isLoading, setIsLoading] = useState(true);
@@ -17,6 +18,7 @@ const Index = (props) => {
 		<div>
 			<Container>
 				<HeroHome />
+				<Tasaciones />
 				<Icons />
 				<br />
 				{isLoading ? (
