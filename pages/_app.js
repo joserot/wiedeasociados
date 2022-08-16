@@ -5,7 +5,7 @@ import "../styles/index.scss";
 export default function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		typeof document !== undefined
-			? import("bootstrap/dist/js/bootstrap")
+			? require("bootstrap/dist/js/bootstrap.bundle.min.js")
 			: null;
 	}, []);
 	return <Component {...pageProps} />;
