@@ -4,8 +4,8 @@ const Features = (props) => {
 	let price = props.price;
 
 	return (
-		<div style={{ width: "90%", height: "auto" }}>
-			<ul className="list-group mt-3">
+		<div style={{ width: "90%", height: "auto" }} className="mt-3">
+			<ul className="list-group ">
 				{" "}
 				{props.price === null || props.price === undefined ? (
 					false
