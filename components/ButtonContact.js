@@ -7,7 +7,7 @@ const ButtonContact = (props) => {
 			type="button"
 			className="btn btn-primary mt-3"
 			style={{
-				maxWidth: "70%",
+				maxWidth: "90%",
 			}}
 		>
 			<svg
