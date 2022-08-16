@@ -3,7 +3,13 @@ import React from "react";
 const ButtonContact = (props) => {
 	const title = props.title;
 	return (
-		<button type="button" className="btn btn-primary mt-3">
+		<button
+			type="button"
+			className="btn btn-primary mt-3"
+			style={{
+				maxWidth: "90%",
+			}}
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="16"

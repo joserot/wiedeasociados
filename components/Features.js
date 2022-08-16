@@ -5,7 +5,7 @@ const Features = (props) => {
 
 	return (
 		<div style={{ width: "90%", height: "auto" }}>
-			<ul className="list-group">
+			<ul className="list-group mt-3">
 				{" "}
 				{props.price === null || props.price === undefined ? (
 					false
