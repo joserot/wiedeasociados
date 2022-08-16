@@ -38,31 +38,20 @@ const Header = () => {
 									</a>
 								</Link>
 							</li>
-							<li
-								className="nav-item dropdown"
-								style={{
-									cursor: "pointer",
-								}}
-							>
-								<a
-									className="nav-link dropdown-toggle"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Inmuebles
-								</a>
-								<ul className="dropdown-menu">
-									<li>
-										<Link href="/inmuebles/en-venta">
-											<a className="dropdown-item">En venta</a>
-										</Link>
-									</li>
-									<li>
-										<Link href="/inmuebles/en-alquiler">
-											<a className="dropdown-item">En alquiler</a>
-										</Link>
-									</li>
-								</ul>
+
+							<li className="nav-item">
+								<Link href="/inmuebles/en-venta">
+									<a className="nav-link" aria-current="page">
+										En venta
+									</a>
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link href="/inmuebles/en-alquiler">
+									<a className="nav-link" aria-current="page">
+										En alquiler
+									</a>
+								</Link>
 							</li>
 							<li className="nav-item">
 								<Link href="/contacto">
