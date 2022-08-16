@@ -4,9 +4,9 @@ import "../styles/index.scss";
 
 export default function MyApp({ Component, pageProps }) {
 	useEffect(() => {
-		typeof document !== undefined
-			? require("bootstrap/dist/js/bootstrap.bundle.min.js")
-			: null;
+		import("../js/button");
+		import("../js/dropdown");
+		import("../js/carousel");
 	}, []);
 	return <Component {...pageProps} />;
 }
