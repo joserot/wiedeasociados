@@ -4,7 +4,7 @@ import "../styles/index.scss";
 
 export default function MyApp({ Component, pageProps }) {
 	useEffect(() => {
-		import("bootstrap/js/dist/*.js");
+		import("bootstrap/dist/js/bootstrap.js");
 	}, []);
 	return <Component {...pageProps} />;
 }
