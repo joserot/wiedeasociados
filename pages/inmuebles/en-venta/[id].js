@@ -80,7 +80,9 @@ const SingleInmueble = (props) => {
 					</div>
 					<div className="row row-cols-1 mt-5">
 						<LocationInmueble location={mapLocation} />
-						<ButtonContact title={title} />
+						<div className="d-flex justify-content-center">
+							<ButtonContact title={title} />
+						</div>
 					</div>
 					<div className="row row-cols-1 mt-5">
 						<RelatedInmuebles id={props.inmueble.id} type={type} />
