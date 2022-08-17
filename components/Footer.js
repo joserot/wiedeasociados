@@ -10,7 +10,8 @@ const Footer = () => {
 					{/* Facebook */}
 					<a
 						className="btn btn-outline-light btn-floating m-1"
-						href="#!"
+						href="https://www.facebook.com/wiedeyasociados/"
+						target="_blank"
 						role="button"
 					>
 						<svg
@@ -27,7 +28,8 @@ const Footer = () => {
 					{/* Instagram */}
 					<a
 						className="btn btn-outline-light btn-floating m-1"
-						href="#!"
+						href="https://www.instagram.com/wiede_asociados/?hl=en"
+						target="_blank"
 						role="button"
 					>
 						<svg
@@ -43,7 +45,8 @@ const Footer = () => {
 					{/* WhatsApp */}
 					<a
 						className="btn btn-outline-light btn-floating m-1"
-						href="#!"
+						href="https://wa.me/0543756449478?text=Quiero%20que%20me%20contacten"
+						target="_blank"
 						role="button"
 					>
 						<svg
