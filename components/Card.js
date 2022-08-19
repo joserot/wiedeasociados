@@ -5,29 +5,29 @@ const Card = (props) => {
 	const title = props.inmueble.title.rendered;
 	const type = props.inmueble.acf.type;
 	let price;
-	const getPrice = () => {
-		if (
-			props.inmueble.acf.usd_price.length === 0 ||
-			props.inmueble.acf.usd_price.length === " "
-		) {
-			price = new Intl.NumberFormat("en-US", {
-				style: "currency",
-				currency: "ARS",
-			}).format(props.inmueble.acf.pesos_price);
-		} else if (
-			props.inmueble.acf.pesos_price.length === 0 ||
-			props.inmueble.acf.usd_price.length === " "
-		) {
-			price = new Intl.NumberFormat("en-US", {
-				style: "currency",
-				currency: "USD",
-			}).format(props.inmueble.acf.usd_price);
-			price = price + " m2";
-		} else {
-			price = null;
-		}
-	};
-	getPrice();
+	// const getPrice = () => {
+	// 	if (
+	// 		props.inmueble.acf.usd_price.length === 0 ||
+	// 		props.inmueble.acf.usd_price.length === " "
+	// 	) {
+	// 		price = new Intl.NumberFormat("en-US", {
+	// 			style: "currency",
+	// 			currency: "ARS",
+	// 		}).format(props.inmueble.acf.pesos_price);
+	// 	} else if (
+	// 		props.inmueble.acf.pesos_price.length === 0 ||
+	// 		props.inmueble.acf.usd_price.length === " "
+	// 	) {
+	// 		price = new Intl.NumberFormat("en-US", {
+	// 			style: "currency",
+	// 			currency: "USD",
+	// 		}).format(props.inmueble.acf.usd_price);
+	// 		price = price + " m2";
+	// 	} else {
+	// 		price = null;
+	// 	}
+	// };
+	// getPrice();
 
 	return (
 		<Link href={"/inmuebles/en-venta/" + props.inmueble.id}>
@@ -48,7 +48,7 @@ const Card = (props) => {
 					/>
 					<div className="card-body">
 						<h5 className="card-title">{title}</h5>
-						{price === null || price === undefined ? (
+						{/* {price === null || price === undefined ? (
 							false
 						) : (
 							<h6 className="card-text">
@@ -66,7 +66,7 @@ const Card = (props) => {
 								</svg>
 								{" " + price}
 							</h6>
-						)}
+						)} */}
 
 						<h6 className="card-text">
 							{" "}
