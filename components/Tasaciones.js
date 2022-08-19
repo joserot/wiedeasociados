@@ -21,7 +21,7 @@ const Tasaciones = () => {
 						}}
 					>
 						{" "}
-						Tasaciones / Contacto
+						TASACIONES / CONTACTO
 					</a>
 				</Link>
 			</button>

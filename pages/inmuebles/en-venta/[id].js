@@ -43,9 +43,9 @@ const SingleInmueble = (props) => {
 				<Loader />
 			) : (
 				<div>
-					{" "}
 					<Hero title={title} />
-					<div className="row row-cols-1 row-cols-md-2">
+
+					<div className="row row-cols-1 row-cols-md-2 g-5">
 						<div
 							className="col d-flex justify-content-center"
 							style={{ height: "500px" }}
