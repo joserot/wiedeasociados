@@ -29,30 +29,13 @@ const SingleInmueble = (props) => {
 		});
 	};
 	pushGallery();
-	let price;
-	// const getPrice = () => {
-	// 	if (
-	// 		props.inmueble.acf.usd_price.length === 0 ||
-	// 		props.inmueble.acf.usd_price.length === " "
-	// 	) {
-	// 		price = new Intl.NumberFormat("en-US", {
-	// 			style: "currency",
-	// 			currency: "ARS",
-	// 		}).format(props.inmueble.acf.pesos_price);
-	// 	} else if (
-	// 		props.inmueble.acf.pesos_price.length === 0 ||
-	// 		props.inmueble.acf.usd_price.length === " "
-	// 	) {
-	// 		price = new Intl.NumberFormat("en-US", {
-	// 			style: "currency",
-	// 			currency: "USD",
-	// 		}).format(props.inmueble.acf.usd_price);
-	// 		price = price + " m2";
-	// 	} else {
-	// 		price = null;
-	// 	}
-	// };
-	// getPrice();
+	const getPrice = () => {
+		const price = new Intl.NumberFormat("en-US", {
+			style: "currency",
+			currency: "USD",
+		}).format(props.inmueble.acf.price);
+		return price;
+	};
 
 	return (
 		<Container>
@@ -70,7 +53,7 @@ const SingleInmueble = (props) => {
 							<Slider gallery={gallery} fatured={featuredImageUrl} />
 						</div>
 						<div className="col">
-							<Features location={location} type={type} />
+							<Features location={location} type={type} price={getPrice()} />
 							<ButtonContact title={title} />
 						</div>
 					</div>

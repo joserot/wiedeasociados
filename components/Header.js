@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/wiedeyasociados-logo.webp";
+import logo from "../public/logo.png";
 
 const Header = () => {
 	return (
@@ -90,14 +90,14 @@ const Header = () => {
 							<li className="nav-item">
 								<Link href="/inmuebles/en-venta">
 									<a className="nav-link" aria-current="page">
-										En venta
+										Venta
 									</a>
 								</Link>
 							</li>
 							<li className="nav-item">
 								<Link href="/inmuebles/en-alquiler">
 									<a className="nav-link" aria-current="page">
-										En alquiler
+										Alquiler
 									</a>
 								</Link>
 							</li>

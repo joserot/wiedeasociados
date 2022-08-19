@@ -5,7 +5,7 @@ import HeroHomeImage from "../public/hero-image-home.webp";
 
 const HeroHome = () => {
 	return (
-		<header
+		<section
 			className="text-center"
 			style={{
 				width: "100%",
@@ -50,12 +50,12 @@ const HeroHome = () => {
 									role="button"
 									rel="nofollow"
 								>
-									En venta
+									Venta
 								</a>
 							</Link>
 							<Link href="/inmuebles/en-alquiler">
 								<a className="btn btn-outline-light btn-lg m-2" role="button">
-									En alquiler
+									Alquiler
 								</a>
 							</Link>
 						</div>
@@ -69,7 +69,7 @@ const HeroHome = () => {
 					/>
 				</div>
 			</div>
-		</header>
+		</section>
 	);
 };
 
