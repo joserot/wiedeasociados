@@ -2,7 +2,7 @@ import React from "react";
 
 const Icons = () => {
 	return (
-		<div className="row row-cols-1 row-cols-md-2 row-cols-lg-4  mt-5 mb-5  g-5">
+		<div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-5 mt-5">
 			<div className="col d-flex justify-content-center align-items-center flex-column">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

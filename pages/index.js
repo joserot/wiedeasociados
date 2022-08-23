@@ -18,6 +18,7 @@ const Index = (props) => {
 		<div>
 			<Container>
 				<HeroHome />
+
 				<Tasaciones />
 				<Icons />
 				<br />

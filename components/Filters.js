@@ -1,12 +1,17 @@
 import React from "react";
 import Cards from "./Cards";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { getInmuebles } from "../actions/getInmuebles";
 
 const Filters = (props) => {
+	const typeSaved =
+		localStorage.getItem("type") !== null ? [localStorage.getItem("type")] : [];
 	const [inmuebles, setInmuebles] = useState(props.inmuebles);
 	const [q, setQ] = useState("");
-	const [types, setTypes] = useState([]);
+	const [types, setTypes] = useState(typeSaved);
+	const lotes = useRef(null);
+	const casas = useRef(null);
+	const campos = useRef(null);
 
 	const search = (e) => {
 		let query = e.target.value.toLowerCase();
@@ -27,6 +32,22 @@ const Filters = (props) => {
 	};
 
 	useEffect(() => {
+		if (typeSaved.length > 0) {
+			if (typeSaved.includes("Lotes")) {
+				lotes.current.checked = true;
+				localStorage.removeItem("type");
+			}
+
+			if (typeSaved.includes("Casas")) {
+				casas.current.checked = true;
+				localStorage.removeItem("type");
+			}
+
+			if (typeSaved.includes("Campos")) {
+				campos.current.checked = true;
+				localStorage.removeItem("type");
+			}
+		}
 		getInmuebles(q.toLowerCase(), types).then((res) => {
 			setInmuebles(res);
 		});
@@ -51,6 +72,7 @@ const Filters = (props) => {
 						type="checkbox"
 						role="switch"
 						name="Lotes"
+						ref={lotes}
 						onChange={filterType}
 					/>
 					<label className="form-check-label" htmlFor="flexSwitchCheckDefault">
@@ -63,6 +85,7 @@ const Filters = (props) => {
 						type="checkbox"
 						role="switch"
 						name="Casas"
+						ref={casas}
 						onChange={filterType}
 					/>
 					<label className="form-check-label" htmlFor="flexSwitchCheckChecked">
@@ -76,6 +99,7 @@ const Filters = (props) => {
 						type="checkbox"
 						role="switch"
 						name="Campos"
+						ref={campos}
 						onChange={filterType}
 					/>
 					<label

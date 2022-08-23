@@ -17,7 +17,7 @@ const Container = (props) => {
 				/>
 			</Head>
 			<Header />
-			<div className="container  mb-5">{props.children}</div>
+			<div className="container  mb-5 ">{props.children}</div>
 			<Footer />
 			<WhatsAppIcon />
 		</div>
