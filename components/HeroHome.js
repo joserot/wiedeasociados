@@ -50,12 +50,12 @@ const HeroHome = () => {
 									role="button"
 									rel="nofollow"
 								>
-									VENTA
+									COMPRAR
 								</a>
 							</Link>
 							<Link href="/inmuebles/en-alquiler">
 								<a className="btn btn-outline-light btn-lg m-2" role="button">
-									ALQUILER
+									ALQUILAR
 								</a>
 							</Link>
 						</div>

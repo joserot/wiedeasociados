@@ -1,28 +1,17 @@
 import React from "react";
 import Cards from "./Cards";
 import { useEffect, useState } from "react";
+import { getInmuebles } from "../actions/getInmuebles";
 
 const Filters = (props) => {
 	const [inmuebles, setInmuebles] = useState(props.inmuebles);
 	const [q, setQ] = useState("");
 	const [types, setTypes] = useState([]);
-	let newInmuebles = [];
 
 	const search = (e) => {
 		let query = e.target.value.toLowerCase();
 		setQ(query);
 	};
-
-	useEffect(() => {
-		props.inmuebles.filter((inmueble) => {
-			const title = inmueble.title.rendered.toLowerCase();
-			const type = inmueble.acf.type.toLowerCase();
-			if (title.includes(q) || type.includes(q)) {
-				newInmuebles.push(inmueble);
-			}
-			setInmuebles(newInmuebles);
-		});
-	}, [q]);
 
 	const filterType = (e) => {
 		let type = e.target.name;
@@ -35,23 +24,13 @@ const Filters = (props) => {
 		} else {
 			setTypes((current) => [...current, type]);
 		}
-		console.log(types);
 	};
 
 	useEffect(() => {
-		if (types.length === 0) {
-			setInmuebles(props.inmuebles);
-		} else {
-			let newInmuebles = [];
-			props.inmuebles.filter((inmueble) => {
-				const type = inmueble.acf.type;
-				if (types.includes(type)) {
-					newInmuebles.push(inmueble);
-				}
-			});
-			setInmuebles(newInmuebles);
-		}
-	}, [types]);
+		getInmuebles(q.toLowerCase(), types).then((res) => {
+			setInmuebles(res);
+		});
+	}, [q, types]);
 
 	return (
 		<div>
