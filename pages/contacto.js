@@ -19,8 +19,20 @@ const Contacto = () => {
 						<ContactForm />
 					</div>
 					<div className="col">
-						<ContactMap />
+						<h3>Asesoramiento Integral</h3>
+						<p
+							style={{
+								fontSize: "1.2rem",
+							}}
+						>
+							Completa el siguiente formulario o contactános vía WhatsApp
+							directo. Nos esforzamos día a día como inmobiliaria buscando ser
+							los mejores para asesorarte, hace tu consulta con confianza
+						</p>
 					</div>
+				</div>
+				<div className="mt-5">
+					<ContactMap />
 				</div>
 				<br />
 				<br />

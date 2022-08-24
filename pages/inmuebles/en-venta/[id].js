@@ -45,9 +45,9 @@ const SingleInmueble = (props) => {
 				<div>
 					<Hero title={title} />
 
-					<div className="row row-cols-1 row-cols-md-2 g-5">
+					<div className="row row-cols-1 row-cols-md-2 ">
 						<div
-							className="col d-flex justify-content-center"
+							className="col d-flex justify-content-center mb-5"
 							style={{ height: "500px" }}
 						>
 							<Slider gallery={gallery} fatured={featuredImageUrl} />

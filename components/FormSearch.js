@@ -40,9 +40,9 @@ const FormSearch = () => {
 					onChange={changeOperacion}
 				>
 					<option defaultValue value="compra">
-						Compra
+						Comprar
 					</option>
-					<option value="alquiler">Alquiler</option>
+					<option value="alquiler">Alquilar</option>
 				</select>
 			</div>
 			<div className="col-12">

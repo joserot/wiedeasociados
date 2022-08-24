@@ -21,7 +21,7 @@ const Icons = () => {
 						d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
 					/>
 				</svg>
-				<h5>Del lado de tus intereses </h5>
+				<h5>De parte de tus intereses </h5>
 				<p className="text-center">
 					Somos representantes de tus intereses, no intermediarios.
 				</p>
@@ -56,7 +56,8 @@ const Icons = () => {
 				</svg>
 				<h5>Más de 25 años de experiencia</h5>
 				<p className="text-center">
-					Expertos en el rubro inmobiliario de Gdor. Virasoro y alrededores.
+					Expertos en el rubro inmobiliario de la zona de Gdor. Virasoro y
+					alrededores.
 				</p>
 			</div>
 			<div className="col d-flex justify-content-center align-items-center flex-column">
@@ -77,7 +78,7 @@ const Icons = () => {
 				</svg>
 				<h5>Asesoramiento Integral</h5>
 				<p className="text-center">
-					Asesoramiento total y trabajo eficiente desde el minuto 1.
+					Asesoramiento total y trabajo eficiente desde el minuto uno.
 				</p>
 			</div>
 		</div>

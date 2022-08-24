@@ -12,13 +12,13 @@ const About = () => {
 					<h3>¿Quienes somos?</h3>
 					<p>
 						Wiede & Asociados es una empresa familiar cuya misión en el mercado
-						inmobiliario de Gobernador Virasoro y alrededores es hacer la venta
-						simple, asesorando y acompañando al cliente vendedor en cada etapa
-						del proceso, Somos representantes de tus intereses y trabajamos de
-						manera eficiente desde el minuto 1. Contamos con un equipo capaz y
-						una metodología de trabajo que combina los medios digitales y la
-						tecnología de vanguardia con la experiencia de nuestros 25 años para
-						efectuar cada venta y alcanzar tus objetivos.
+						inmobiliario es hacer mas sencillo el proceso de venta, asesorando y
+						acompañando al cliente/vendedor en cada etapa del proceso. Somos
+						representantes de tus intereses y trabajamos de manera eficiente
+						desde el primer momento. Contamos con un equipo capaz y una
+						metodología de trabajo que combina los medios digitales y la
+						tecnología de vanguardia con nuestra experiencia de 25 años para
+						efectuar cada venta y así alcanzar tus objetivos.
 					</p>
 					<ul className="list-group">
 						<li
