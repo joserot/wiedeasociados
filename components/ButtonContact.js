@@ -8,9 +8,10 @@ const ButtonContact = (props) => {
 	return (
 		<button
 			type="button"
-			className="btn btn-primary mt-3"
+			className="btn  mt-3"
 			style={{
 				maxWidth: "90%",
+				backgroundColor: "#00bb2d",
 			}}
 		>
 			<a

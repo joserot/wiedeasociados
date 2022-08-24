@@ -104,7 +104,7 @@ const Header = () => {
 							<li className="nav-item">
 								<Link href="/contacto">
 									<a className="nav-link" aria-current="page">
-										Contacto
+										Tasaciones
 									</a>
 								</Link>
 							</li>

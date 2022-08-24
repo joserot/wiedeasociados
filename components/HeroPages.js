@@ -41,7 +41,7 @@ const HeroPages = (props) => {
 						className="d-flex justify-content-center align-items-center h-100 "
 					>
 						<div className="text-white">
-							<h1 className="mb-3">{title}</h1>
+							<h1 className="mb-3 display-5">{title}</h1>
 						</div>
 					</div>
 					<Image

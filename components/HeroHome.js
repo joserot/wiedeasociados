@@ -97,10 +97,10 @@ const HeroHome = () => {
 						textShadow: "2px 2px 5px  #000",
 					}}
 				>
-					<h2 className="text-center text-white display-4">
+					<h2 className="text-center text-white display-3">
 						Encontremos tu lugar ideal
 					</h2>
-					<h5 className="text-center text-white ">
+					<h5 className="text-center text-white mx-2">
 						Servicios Inmobiliarios - Gobernador Virasoro Ctes. y alrededores
 					</h5>
 					<FormSearch />

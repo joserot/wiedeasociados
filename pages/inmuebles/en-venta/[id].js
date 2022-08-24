@@ -23,6 +23,7 @@ const SingleInmueble = (props) => {
 	const mapLocation = props.inmueble.acf.map_location;
 	const description = props.inmueble.acf.description;
 	const gallery = [];
+	const totalSize = props.inmueble.acf.superficie_total;
 	const pushGallery = () => {
 		props.inmueble.acf_photo_gallery.forEach((el) => {
 			gallery.push(el.full_image_url);
@@ -53,7 +54,12 @@ const SingleInmueble = (props) => {
 							<Slider gallery={gallery} fatured={featuredImageUrl} />
 						</div>
 						<div className="col">
-							<Features location={location} type={type} price={getPrice()} />
+							<Features
+								location={location}
+								type={type}
+								price={getPrice()}
+								totalSize={totalSize}
+							/>
 							<ButtonContact title={title} />
 						</div>
 					</div>

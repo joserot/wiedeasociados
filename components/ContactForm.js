@@ -20,7 +20,7 @@ const ContactForm = () => {
 	};
 	return (
 		<div>
-			<h3>Dejanos tus consultas</h3>
+			<h3>Tasá con Wiede y Asociados</h3>
 			<form id="contact-form" onSubmit={sendForm}>
 				<div className="form-outline mb-4">
 					<input

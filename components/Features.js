@@ -15,6 +15,14 @@ const Features = (props) => {
 					{" "}
 					Tipo: {props.type}
 				</li>
+				{props.totalSize.length > 0 ? (
+					<li className="list-group-item  list-group-item-action">
+						{" "}
+						Superficie Total: {props.totalSize + "m2"}
+					</li>
+				) : (
+					false
+				)}
 			</ul>
 		</div>
 	);
