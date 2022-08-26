@@ -24,6 +24,9 @@ const SingleInmueble = (props) => {
 	const description = props.inmueble.acf.description;
 	const gallery = [];
 	const totalSize = props.inmueble.acf.superficie_total;
+	const coverSize = props.inmueble.acf.superficie_cubierta;
+	const rooms = props.inmueble.acf.numero_de_dormitorios;
+	const bathRooms = props.inmueble.acf.numero_de_banos;
 	const pushGallery = () => {
 		props.inmueble.acf_photo_gallery.forEach((el) => {
 			gallery.push(el.full_image_url);
@@ -59,6 +62,9 @@ const SingleInmueble = (props) => {
 								type={type}
 								price={getPrice()}
 								totalSize={totalSize}
+								coverSize={coverSize}
+								rooms={rooms}
+								bathRooms={bathRooms}
 							/>
 							<ButtonContact title={title} />
 						</div>

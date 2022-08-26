@@ -15,10 +15,30 @@ const Features = (props) => {
 					{" "}
 					Tipo: {props.type}
 				</li>
-				{props.totalSize.length > 0 ? (
+				{props.totalSize ? (
 					<li className="list-group-item  list-group-item-action">
-						{" "}
 						Superficie Total: {props.totalSize + "m2"}
+					</li>
+				) : (
+					false
+				)}
+				{props.coverSize ? (
+					<li className="list-group-item  list-group-item-action">
+						Superficie Cubierta: {props.coverSize + "m2"}
+					</li>
+				) : (
+					false
+				)}
+				{props.rooms ? (
+					<li className="list-group-item  list-group-item-action">
+						Dormitorios: {props.rooms}
+					</li>
+				) : (
+					false
+				)}
+				{props.bathRooms ? (
+					<li className="list-group-item  list-group-item-action">
+						Baños: {props.bathRooms}
 					</li>
 				) : (
 					false
