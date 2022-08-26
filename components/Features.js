@@ -9,7 +9,11 @@ const Features = (props) => {
 				</li>
 				<li className="list-group-item  list-group-item-action">
 					{" "}
-					Ubicación: {props.location}
+					<span> Ubicación: </span>
+					<span
+						className="mb-3"
+						dangerouslySetInnerHTML={{ __html: props.location }}
+					></span>
 				</li>
 				<li className="list-group-item  list-group-item-action">
 					{" "}

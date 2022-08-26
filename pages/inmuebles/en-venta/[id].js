@@ -71,7 +71,7 @@ const SingleInmueble = (props) => {
 					</div>
 					<div className="row row-cols-1 mt-5">
 						<h3>Descripción</h3>
-						<div dangerouslySetInnerHTML={{ __html: description }}></div>
+						<p dangerouslySetInnerHTML={{ __html: description }}></p>
 					</div>
 					<div className="row row-cols-1 mt-5">
 						<LocationInmueble location={mapLocation} />

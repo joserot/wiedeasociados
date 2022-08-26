@@ -30,7 +30,10 @@ const Card = (props) => {
 						}}
 					/>
 					<div className="card-body">
-						<h5 className="card-title">{title}</h5>
+						<h5
+							className="card-title"
+							dangerouslySetInnerHTML={{ __html: title }}
+						></h5>
 						<h6 className="card-text">
 							{" "}
 							<svg
