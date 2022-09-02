@@ -10,6 +10,8 @@ import Loader from "../../components/Loader";
 const Inmuebles = (props) => {
 	const [isLoading, setIsLoading] = useState(true);
 
+	console.log(props.inmuebles);
+
 	useEffect(() => {
 		setIsLoading(false);
 	}, [props.inmuebles]);
