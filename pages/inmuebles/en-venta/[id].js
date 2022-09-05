@@ -16,6 +16,8 @@ const SingleInmueble = (props) => {
 		setIsLoading(false);
 	}, [props.inmueble]);
 
+	console.log(props.inmueble);
+
 	const title = props.inmueble.title.rendered;
 	const featuredImageUrl = props.inmueble.acf_photo_gallery[0].full_image_url;
 	const location = props.inmueble.acf.location;
@@ -47,7 +49,7 @@ const SingleInmueble = (props) => {
 				<Loader />
 			) : (
 				<div>
-					<Hero title={title} />
+					{title ? <Hero title={title} /> : null}
 
 					<div className="row row-cols-1 row-cols-md-2 ">
 						<div

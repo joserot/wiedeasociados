@@ -34,7 +34,7 @@ const Index = (props) => {
 };
 
 Index.getInitialProps = async () => {
-	const res = await fetch(API_INMUEBLES);
+	const res = await fetch(API_INMUEBLES + "?per_page=20");
 	const data = await res.json();
 	return { inmuebles: data };
 };
